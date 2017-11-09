@@ -171,7 +171,6 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	</head>
 	<body>
 	<header role="banner" id="fh5co-header">
@@ -638,13 +637,5 @@
 	<script src="js/google_map.js"></script>
 
 	<script src="js/main.js"></script>
-	<script type="text/javascript">
-		window.onload = function() {
-			axios.get('https://localhost:8080/api/message')
-				.then(function(response){
-					app.message = response.data[0]['message'];
-				});
-			}
-	</script>
 	</body>
 </html>
