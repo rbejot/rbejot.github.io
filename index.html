@@ -640,7 +640,7 @@
 	<script src="js/main.js"></script>
 	<script type="text/javascript">
 		window.onload = function() {
-			axios.get('http://localhost:8080/api/message')
+			axios.get('https://localhost:8080/api/message')
 				.then(function(response){
 					app.message = response.data[0]['message'];
 				});
