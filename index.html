@@ -638,6 +638,13 @@
 	<script src="js/google_map.js"></script>
 
 	<script src="js/main.js"></script>
-
+	<script type="text/javascript">
+		window.onload = function() {
+			axios.get('http://localhost:8080/api/message')
+				.then(function(response){
+					app.message = response.data[0]['message'];
+				});
+			}
+	</script>
 	</body>
 </html>
